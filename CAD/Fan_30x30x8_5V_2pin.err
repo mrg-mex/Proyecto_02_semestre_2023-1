@@ -1,0 +1,42 @@
+
+
+
+          SolidWorks Corporation - STEP Processor Error Log
+          ______________________________________________________
+
+                       STEP Post Processor
+                       ___________________
+
+
+STEP File Name: D:\Archivos\2021-1\Papiit\CAD\Raspbot\CAD\Fan_30x30x8_5V_2pin.stp
+
+
+
+Error: El tipo de entidad no está soportado.
+STEP: la importación no se ha completado satisfactoriamente.
+
+Error: El tipo de entidad no está soportado.
+STEP: la importación no se ha completado satisfactoriamente.
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+XLTR: Circuit sanity failure
+Las superficies se procesaron satisfactoriamente
+para formar el sólido.
+STEP: la importación se ha completado.
+Error: No se puede crear un sólido de superficies
+recortadas.
+STEP: la importación no se ha completado satisfactoriamente.
+Las superficies se procesaron satisfactoriamente
+para formar el sólido.
+STEP: la importación se ha completado.
