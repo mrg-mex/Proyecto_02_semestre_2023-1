@@ -1,5 +1,16 @@
 # Proyecto_2_semestre_2023-1
 # Revisión, rediseño e implementación de un robot móvil Rasbot UNAM
+Código          | Description 
+Asignatura      | Robotica 2135
+Robotica 2023-1 | Proyecto_2_Raspbot
+
+# Contenido
+- Objetivo
+- Introduccion 
+- Desarrollo
+- Conclusiones
+- Autor
+- Referencias
 
 # Participantes
 - Erik Peña Medina (responable).
@@ -23,5 +34,14 @@ Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programac
 - Un banco de pruebas físico en el cual puedan ser implementados los algoritmos comprobados en el banco de pruebas virtual.
 - Un repositorio con todos los archivos generados durante el desarrollo del proyecto.
 
+# Introducción 
+- 
 
+# Desarrollo
+- 
 
+# Conclusiones
+-
+
+# Referencias 
+- 
