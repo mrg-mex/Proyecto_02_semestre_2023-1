@@ -52,12 +52,12 @@ Las problemáticas del robot móvil (2,0) comenzaron con la presencia de errores
 
 Al tener un ensamble libre de errores, procedimos a identificar, estructurar, organizar y delimitar tareas por medio de problemáticas o issues usando GitHub como herramienta. Identificamos y propusimos en total seis problemas principales en cuanto a diseño se refiere:
 
-- Actividad 1: Arreglar archivos actuales que originan errores de ensamble.
-- Actividad 2: Diseño colocación del sistema de sensores ultrasónicos.
-- Actividad 3: Cambio diseño superior de robot móvil, NUEVO Ventilador para Raspberry.
-- Actividad 4: Modificaciones en chasis para problemáticas actuales.
-- Actividad 5: Detalles para base superior código QR.
-- Actividad 6: Recuperar diseño actual de pieza. Rueda bola loca.
+- [Actividad 1: Arreglar archivos actuales que originan errores de ensamble.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/1)
+- [Actividad 2: Diseño colocación del sistema de sensores ultrasónicos.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/2)
+- [Actividad 3: Cambio diseño superior de robot móvil, NUEVO Ventilador para Raspberry.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/3)
+- [Actividad 4: Modificaciones en chasis para problemáticas actuales.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/4)
+- [Actividad 5: Detalles para base superior código QR.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/5)
+- [Actividad 6: Recuperar diseño actual de pieza. Rueda bola loca.](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/issues/6)
 
 En base a estas problemáticas y con la primera de ellas ya resuelta (arreglo de archivos) distribuimos las problemáticas entre los tres integrantes de este proyecto para así, lograr un mayor avance en la solución y conclusión de la lista de problemas; sin dejar de lado una comunicación entre los integrantes del equipo ante cualquier situación o solicitud de apoyo.
 
