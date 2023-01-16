@@ -7,6 +7,14 @@
 - Luis García Mejía (participante)
 - Andrés David Flores Ferro (participante)
 
+#Contenido
+* Objetivo
+* Metas
+* Productos
+* Introducción
+* Desarrollo
+* Conclusión
+
 # Objetivo
 
 Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programación de algoritmos de navegación mediante el uso de sensores ultrasónicos y análisis de imágenes.
@@ -24,6 +32,17 @@ Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programac
 - Un repositorio con todos los archivos generados durante el desarrollo del proyecto.
 
 # Introducción
+Un robot móvil es capaz de moverse autónomamente y de ejecutar determinadas acciones. Junto a la movilidad, por tanto, la independencia del robot respecto de la intervención humana es uno de los aspectos esenciales de la robótica móvil.
+La robótica móvil actualmente aún se encuentra en un estadio relativamente temprano de su desarrollo, hace varios años que se utilizan prototipos y productos en serie en diferentes sectores como en el transporte, la agricultura, vehículos autónomos, etc.
+
+Algunas de las características que presenta la robótica móvil son:
+•	Percepción mediante sistemas sensores
+•	Capacidad de adaptación ante circunstancias espaciales modificadas
+•	Navegación, planificación y actuación autónomas
+•	Software/programación orientados a tareas 
+
+Por medio de este documento se intenta plasmar algunas situaciones de diseños que se solucionaron en el robot raspbot como lo es el redimensionamiento de algunas piezas, la corrección de problemas al abrir archivos en solidworks, el diseño y ensamble de nuevas piezas, entre otras actividades que se especificaran en el documento.
+Lo anterior se planteó solucionar mediante la separación de actividades usando issues y mediante el uso del programa solidworks y finalmente los resultados obtenidos se encuentran descritos a lo largo de documento.
 
 
 
