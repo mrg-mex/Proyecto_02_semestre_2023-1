@@ -7,13 +7,13 @@
 - Luis García Mejía (participante)
 - Andrés David Flores Ferro (participante)
 
-#Contenido
-* Objetivo
-* Metas
-* Productos
-* Introducción
-* Desarrollo
-* Conclusión
+# Contenido
+- Objetivo
+- Metas
+- Productos
+- Introducción
+- Desarrollo
+- Conclusión
 
 # Objetivo
 
@@ -36,10 +36,10 @@ Un robot móvil es capaz de moverse autónomamente y de ejecutar determinadas ac
 La robótica móvil actualmente aún se encuentra en un estadio relativamente temprano de su desarrollo, hace varios años que se utilizan prototipos y productos en serie en diferentes sectores como en el transporte, la agricultura, vehículos autónomos, etc.
 
 Algunas de las características que presenta la robótica móvil son:
-•	Percepción mediante sistemas sensores
-•	Capacidad de adaptación ante circunstancias espaciales modificadas
-•	Navegación, planificación y actuación autónomas
-•	Software/programación orientados a tareas 
+- Percepción mediante sistemas sensores
+- Capacidad de adaptación ante circunstancias espaciales modificadas
+- Navegación, planificación y actuación autónomas
+- Software/programación orientados a tareas 
 
 Por medio de este documento se intenta plasmar algunas situaciones de diseños que se solucionaron en el robot raspbot como lo es el redimensionamiento de algunas piezas, la corrección de problemas al abrir archivos en solidworks, el diseño y ensamble de nuevas piezas, entre otras actividades que se especificaran en el documento.
 Lo anterior se planteó solucionar mediante la separación de actividades usando issues y mediante el uso del programa solidworks y finalmente los resultados obtenidos se encuentran descritos a lo largo de documento.
