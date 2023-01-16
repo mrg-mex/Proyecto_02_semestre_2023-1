@@ -33,14 +33,54 @@ Las problemáticas del robot móvil (2,0) comenzaron con la presencia de errores
 
 Al tener un enmsamble libre de errores, procedimos a identificar, estructirar, organizar y delimitar tareas por medio de problemáticas o issues usando GitHub como herramienta. Identificamos y propusimos en total seis problemas principales en cuanto a diseño se refiere:
 
-- Arreglar archivos actuales que originan errores de ensamble.
-- Diseño colocación del sistema de sensores ultrasónicos.
-- Cambio diseño superior de robot móvil, NUEVO Ventilador para Raspberry.
-- Modificaciones en chasis para problemáticas actuales.
-- Detalles para base superior código QR.
-- Recuperar diseño actual de pieza. Rueda bola loca.
+- Actividad 1: Arreglar archivos actuales que originan errores de ensamble.
+- Actividad 2: Diseño colocación del sistema de sensores ultrasónicos.
+- Actividad 3: Cambio diseño superior de robot móvil, NUEVO Ventilador para Raspberry.
+- Actividad 4: Modificaciones en chasis para problemáticas actuales.
+- Actividad 5: Detalles para base superior código QR.
+- Actividad 6: Recuperar diseño actual de pieza. Rueda bola loca.
 
-En base a estas problemáticas y con la primera de ellas ya resuelta (arreglo de archivos) distribuimos las problemáticas entre los tres integrantes de este proyecto para así, lograr un mayor avance en la solución y conclusión de la lista de problemas.
+En base a estas problemáticas y con la primera de ellas ya resuelta (arreglo de archivos) distribuimos las problemáticas entre los tres integrantes de este proyecto para así, lograr un mayor avance en la solución y conclusión de la lista de problemas; sin dejar de lado una comunicación entre los integrantes del equipoante cualquier situación o solicitud de apoyo.
+
+Para iniciar nuestras respectivas actividades, lo primero que se hizo fue analizar el robot móvil físicamente para anotar dimensiones, observar los elementos que los componen y su distribución, ver los espacios o secciones no aprovechadas en el chasis y su factibilidad de realizar modificaciones en ese espacio específico. Esto nos birndaría mucha información en nuestra lluvia de ideas para lograr la solución mas creativa y óptima. Asimismo aprovechamos para tomar las medidas correctas principalmente de la rueda bola loca, siendo un proceso escencial en la actividad 6 para comparar las medidad reales con las medidad establecidad en el CAd y modificarlas a su valor real. De manera secundaria, se observo y midió el ventilador para la Raspberry con fines de lograr una eficaz modificación en la parte superior del robot. Finalmente pero no menos importante, se observó el modelo para obtener ideas acerca de la colocación de tres sensores ultrasónicos y el doble puente H que llevará el robot para el control de los dos motores CD.
+
+Las modificaciones al chasis del robot móvil fueron una parte vital de nuestro proyecto, ya que ésta activida tenía relación con la base superior, las conexiones con el microporocesador Raspberry y el doble puente H y la colocación de los sensores ultrasónicos, por ende, las primeras modificación que se hicieron fueron en beneficio de la óptima conexión entre la Raspberry y el doble puente H, y modificaciones para la colocación de la base superior.
+
+Para la base superior, se modificaron los diámetros de los orificios donde se insertan los postes de latón que sujetan a la Raspberry y se extruyeron un par de milimnetros más para aumentar la altura de la base y así liberar la entrada micro SD. Para garantizar que el usuario que maneje el robot móvil no tenga problemas con la inserción y retiro de la micro SD, los orificios se separaron ligeramente de la base para la cámara.
+
+La siguientes modificaciones a trabajar fueron los elementos para la conexión del microcontrolador y el puente H. Dicha conexión se logró perfornado en forma de ranura el lateral del chasis para que, de esta manera los cables que deriven de la Raspberry puedan pasar por esta ranura y no dificulte el desplazamiento del robot. Para la colocación del doble puente H se realizó una serie de canales o correderas, en donde se deslizará y sujetará el módulo con los pines disponibles para conexión. Como complemento, se realizó un arco en el lateral del chasis, cerca de la ranura con el fin de que por ahí pasen los cables e conexión y se contengan dentro del arco, evitando que los cables sobresalgan demasiado y estorben en su funcionamiento más de lo que ayudan.
+
+![image](https://user-images.githubusercontent.com/42391642/212604274-cc207020-5077-4566-97f3-69bce967d1d6.png)
+![image](https://user-images.githubusercontent.com/42391642/212604324-6934ea45-07c8-4d9e-b677-515ee8c0f8b4.png)
+
+La última modificación para el chasis dependía del diseño previo realizado para la colocación de los tres sensores ultrasónicos. Se llegó a un primer modelo, el cuál, después de ser analizado y ensamblado a la estructura, se desecho debido al sesgo y posibles errores de sensado debido a la distribución propuesta.
+
+![image](https://user-images.githubusercontent.com/42391642/212604683-fe5890d1-6e33-4c1e-bb5c-2108b7dcf41e.png)
+
+Procedimos a realizar una segunda propuesta, donde dos de los sensores ultrasónicos estarán en la parte superior del chasis a los laterales y el tercero se encontrará enfrente de éste, en la parte inferior, haciendo analogía a una defensa de auto. La estructura para la colocación de los dos sensores laterales estarán integradas directamente al chasis, mientras que el tercero se montará con ayuda de una pieza externa. Con estosmrequerimientos y consideraciones, procedimos a modificar el chasis con las operaciones oportunas para lograr el correcto ensamble y montaje de los tres sensores, solucionando así la actividad 2 y 4
+
+![image](https://user-images.githubusercontent.com/42391642/212605092-e890cfb2-9766-4a88-b0b4-de7fb43a52a3.png)
+
+Para la solución de la actividad 3 (el ventilador), se encontró un CAD existente con las dimensiones requeridas, se colocó en el CAD e implementaron restricciones para mantenerlo en el lugar adecuado dentro del archivo de ensamble y finalmente se modificó la base para lograr una disminución de espacio.
+
+![image](https://user-images.githubusercontent.com/42391642/212605892-d9da0a0b-eb94-4a3a-a07d-c84604dd0a06.png)
+
+La actividad 5, al estar relacionada de igual manera con la base (la cual fue modificada en la actividad 3), logró solucionarse de una manera más sencilla con el acomodo del ventilador y la base del código QR.
+
+![image](https://user-images.githubusercontent.com/42391642/212606318-d1f9dedf-eb36-421d-8e6d-9f46f7a7fd30.png)
+
+Paramla actividad 6 bastó con mofificar los elementos que componían la rueda bola loca y ajustarlos a las medidas reales realizadas en el laboratorio.
+
+![image](https://user-images.githubusercontent.com/42391642/212606375-01f496ec-193f-48f4-8205-17df116cdbf6.png)
+
+De esta forma se concluyeron exitosamente las actividades propuestas al incio del proyecto, logrando obtener un archivo ensamble completo, que inmediatamente se mando a imprimir para observar y probar los resultados finales de nuestro trabajo. Sin embargo, esto no fue posible debido a un problema con la boquilla en la impresora 3D, dificultando la salida del material para la fabricación el chasis. 
+
+Finalmente se decidió que la mejor solución será cambiar la boquilla por una nueva y mandar el archivo nuevamente a impresión.
+
+Se anexa una fotografía de la impresión resultante antes de que la impresora sufriera este percance.
+
+![IMG_5589](https://user-images.githubusercontent.com/42391642/212607940-1cbf31d9-646b-418d-8706-08bab4f79812.JPG)
+![IMG_5591](https://user-images.githubusercontent.com/42391642/212607959-23c397f9-b5a9-4b56-9d2e-9c984d4c3a75.JPG)
 
 # Conclusión
 
