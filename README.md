@@ -29,7 +29,18 @@ Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programac
 
 # Desarrollo
 
+Las problemáticas del robot móvil (2,0) comenzaron con la presencia de errores en los archivos Chasis_2-1 y Chaster_shorun_65-1 provenientes del ensamble CAD, siendo la pieza de chasis del robot y la pieza del sistema de rueda bola loca respectivamente. Por lo tanto este fue el primer problema que se atacó y por ende el primero que se resolvió, siendo de vital importanciapara el correcto desarrollo del proyecto debido a que bajo éste ensamble y sus archivos, trabajaría todo el equipo.
 
+Al tener un enmsamble libre de errores, procedimos a identificar, estructirar, organizar y delimitar tareas por medio de problemáticas o issues usando GitHub como herramienta. Identificamos y propusimos en total seis problemas principales en cuanto a diseño se refiere:
+
+- Arreglar archivos actuales que originan errores de ensamble.
+- Diseño colocación del sistema de sensores ultrasónicos.
+- Cambio diseño superior de robot móvil, NUEVO Ventilador para Raspberry.
+- Modificaciones en chasis para problemáticas actuales.
+- Detalles para base superior código QR.
+- Recuperar diseño actual de pieza. Rueda bola loca.
+
+En base a estas problemáticas y con la primera de ellas ya resuelta (arreglo de archivos) distribuimos las problemáticas entre los tres integrantes de este proyecto para así, lograr un mayor avance en la solución y conclusión de la lista de problemas.
 
 # Conclusión
 
