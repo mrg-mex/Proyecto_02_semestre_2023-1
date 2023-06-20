@@ -24,18 +24,28 @@ Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programac
 
 # Metas
 
-- Evaluar y rediseñar el diseño del robot móvil con el fin de incorporar un par de sensores ultrasónicos y el driver de control de los motores. 
-- Desarrollar de una simulación del robot móvil en el simulador Gazebo mediante su implementación en ROS2.
-- Implementar los resultados de la simulación en un ambiente definido para los robots.
+-	Evaluar y rediseñar el diseño del robot móvil con el fin de incorporar un par de sensores ultrasónicos y el controlador de los motores.
+-	Desarrollar una simulación del robot móvil Gazebo como herramienta de integración en ROS2.
+-	Implementar los resultados de la simulación en un ambiente físico definido para los robots.
+
 
 # Productos
 
 - Un banco de pruebas virtual en el cual se pueden programar diferentes algoritmos de navegación en el robot móvil. 
 - Un banco de pruebas físico en el cual puedan ser implementados los algoritmos comprobados en el banco de pruebas virtual.
 - Un repositorio con todos los archivos generados durante el desarrollo del proyecto.
+- Circuito físico del sensor HY-SRF05
+-	Circuito físico de dos motorreductores controlados con un controlador
+-	Cámara Raspberry Pi NoIR Camera V2 funcionando adecuadamente
 
 # Introducción
+El desarrollo de los robots móviles ocurre debido a la necesidad de realizar cierto tipo de movimientos en ambientes determinados, de los cuales se desea obtener información mediante sensores que ayuden a medir las variables de interés (distancia, velocidad, humedad, etc.).
+
+Ante la emergencia sanitaria que se vivió en el año 2020 (COVID 19), la robótica móvil comenzó a desarrollarse aún más, esto, debido a que era necesario reducir el contacto humano. Un gran ejemplo de esto ocurrió en la clínica Victoria de Medellín ubicada en Colombia, en donde se implementó un robot móvil para esterilizar espacios que habían sido contaminados de manera rápida y efectiva sin la necesidad de que hubiera contacto físico. En la India también se pudo observar que había robots móviles encargados de suministrar alimento y medicamentos a pacientes con COVID 19, esto ayudaba a minimizar el contagio, pues era como si los pacientes fuesen prácticamente independientes de otros seres humanos.
+
+Lo anterior significa que existe un gran campo de aplicación de los robots móviles, e incluso hay necesidades que aún no están cubiertas porque no hay situación que lo amerite, pero la tecnología debe estar preparada para enfrentar cualquier situación que surja en el mundo.
 Un robot móvil es capaz de moverse autónomamente y de ejecutar determinadas acciones. Junto a la movilidad, por tanto, la independencia del robot respecto de la intervención humana es uno de los aspectos esenciales de la robótica móvil.
+
 La robótica móvil actualmente aún se encuentra en un estadio relativamente temprano de su desarrollo, hace varios años que se utilizan prototipos y productos en serie en diferentes sectores como en el transporte, la agricultura, vehículos autónomos, etc.
 
 Algunas de las características que presenta la robótica móvil son:
@@ -45,6 +55,7 @@ Algunas de las características que presenta la robótica móvil son:
 - Software/programación orientados a tareas 
 
 Por medio de este documento se intenta plasmar algunas situaciones de diseños que se solucionaron en el robot raspbot como lo es el redimensionamiento de algunas piezas, la corrección de problemas al abrir archivos en solidworks, el diseño y ensamble de nuevas piezas, entre otras actividades que se especificaran en el documento.
+
 Lo anterior se planteó solucionar mediante la separación de actividades usando issues y mediante el uso del programa solidworks y finalmente los resultados obtenidos se encuentran descritos a lo largo de documento.
 
 
@@ -103,6 +114,19 @@ Se anexa una fotografía de la impresión resultante antes de que la impresora s
 
 ![IMG_5589](https://user-images.githubusercontent.com/42391642/212607940-1cbf31d9-646b-418d-8706-08bab4f79812.JPG)
 ![IMG_5591](https://user-images.githubusercontent.com/42391642/212607959-23c397f9-b5a9-4b56-9d2e-9c984d4c3a75.JPG)
+
+El robot móvil RaspBot se presentó con los sensores acoplados al chasis, sin embargo, estos aún no eran funcionales, por ende, se comenzó a explorar el robot y ver que sensores debían tener funcionamiento, estos fueron:
+- Sensor ultrasónico HY-SRF05 (3)
+- Motorreductor recto acoplado a una llanta (2)
+- Cámara Raspberry Pi NoIR
+  
+Para poder realizar la programación, se hizo uso de:
+- Raspberry pi 4
+- Motor Driver TB6612FNG
+- Herramienta computacional Thonny
+  
+Se inició con la activación de los motorreductores mediante la implementación del siguiente circuito:
+
 
 # Conclusión
 
