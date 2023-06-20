@@ -6,6 +6,9 @@
 - Rojas Trejo Sebastián (participante)
 - Luis García Mejía (participante)
 - Andrés David Flores Ferro (participante)
+- Alvarado Rivera Daniela (Participante, Semestre 2023-2)
+- García Ávila Angel Alberto (Participante, Semestre 2023-2)
+- Rios Torres Brenda (Participante, Semestre 2023-2)
 
 # Contenido
 - [Objetivo](https://github.com/mrg-mex/Proyecto_02_semestre_2023-1/blob/main/README.md#objetivo)
