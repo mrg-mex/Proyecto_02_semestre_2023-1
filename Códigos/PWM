@@ -1,0 +1,138 @@
+# Hackbot.py
+# Just a little test code to run around the floor a bit
+
+import RPi.GPIO as GPIO  # Importar el módulo RPi.GPIO para controlar los pines GPIO
+import time  # Importar el módulo time para trabajar con retardos
+
+# a couple of delay constants
+leg = 2  # Retardo para avanzar
+turn = 0.5  # Retardo para girar
+
+# set up control pins for motor driver
+STBY = 31
+AIN1 = 33
+AIN2 = 35
+PWMA = 37
+BIN1 = 32
+BIN2 = 36
+PWMB = 38
+
+GPIO.setmode(GPIO.BOARD)  # Utilizar el modo de numeración de pines BOARD
+
+# set the GPIO's to outputs
+GPIO.setup(STBY, GPIO.OUT)
+GPIO.setup(BIN1, GPIO.OUT)
+GPIO.setup(AIN1, GPIO.OUT)
+GPIO.setup(AIN2, GPIO.OUT)
+GPIO.setup(BIN2, GPIO.OUT)
+GPIO.setup(PWMA, GPIO.OUT)
+GPIO.setup(PWMB, GPIO.OUT)
+
+# set initial conditions, STBY
+# is low, so no motors running
+GPIO.output(STBY, GPIO.LOW)
+
+# Motor A configuration
+GPIO.output(AIN1, GPIO.HIGH)
+GPIO.output(AIN2, GPIO.LOW)
+
+# Motor B configuration
+GPIO.output(BIN1, GPIO.HIGH)
+GPIO.output(BIN2, GPIO.LOW)
+
+# Initialize PWM for Motor A and Motor B
+pwm_a = GPIO.PWM(PWMA, 1000)  # Frecuencia de PWM para Motor A: 100 Hz
+pwm_b = GPIO.PWM(PWMB, 1 )  # Frecuencia de PWM para Motor B: 100 Hz
+pwm_a.start(0)  # Iniciar PWM para Motor A con ciclo de trabajo inicial 0
+pwm_b.start(0)  # Iniciar PWM para Motor B con ciclo de trabajo inicial 0
+
+# movement is governed by the 4
+# following functions. These will
+# go into their own library, ultimately.
+def go_forward(run_time):
+    GPIO.output(AIN1, GPIO.LOW)
+    GPIO.output(AIN2, GPIO.HIGH)
+    GPIO.output(BIN1, GPIO.LOW)
+    GPIO.output(BIN2, GPIO.HIGH)
+
+    GPIO.output(STBY, GPIO.HIGH)  # Iniciar el movimiento
+    pwm_a.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor A al 50%
+    pwm_b.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor B al 50%
+    time.sleep(run_time)
+    pwm_a.ChangeDutyCycle(0)  # Detener el Motor A
+    pwm_b.ChangeDutyCycle(0)  # Detener el Motor B
+    GPIO.output(STBY, GPIO.LOW)  # Detener el movimiento
+
+def turn_left(run_time):
+    GPIO.output(AIN1, GPIO.HIGH)
+    GPIO.output(AIN2, GPIO.LOW)
+    GPIO.output(BIN1, GPIO.LOW)
+    GPIO.output(BIN2, GPIO.HIGH)
+
+    GPIO.output(STBY, GPIO.HIGH)  # Iniciar el movimiento
+    pwm_a.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor A al 50%
+    pwm_b.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor B al
+
+def turn_right(run_time):
+    GPIO.output(AIN1, GPIO.LOW)
+    GPIO.output(AIN2, GPIO.HIGH)
+    GPIO.output(BIN1, GPIO.HIGH)
+    GPIO.output(BIN2, GPIO.LOW)
+
+    GPIO.output(STBY, GPIO.HIGH)  # Iniciar el movimiento
+    pwm_a.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor A al 50%
+    pwm_b.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor B al 50%
+    time.sleep(run_time)
+    pwm_a.ChangeDutyCycle(0)  # Detener el Motor A
+    pwm_b.ChangeDutyCycle(0)  # Detener el Motor B
+    GPIO.output(STBY, GPIO.LOW)  # Detener el movimiento
+
+def reverse(run_time):
+    GPIO.output(AIN1, GPIO.HIGH)
+    GPIO.output(AIN2, GPIO.LOW)
+    GPIO.output(BIN1, GPIO.HIGH)
+    GPIO.output(BIN2, GPIO.LOW)
+
+    GPIO.output(STBY, GPIO.HIGH)  # Iniciar el movimiento
+    pwm_a.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor A al 50%
+    pwm_b.ChangeDutyCycle(50)  # Establecer el ciclo de trabajo del Motor B al 50%
+    time.sleep(run_time)
+    pwm_a.ChangeDutyCycle(0)  # Detener el Motor A
+    pwm_b.ChangeDutyCycle(0)  # Detener el Motor B
+    GPIO.output(STBY, GPIO.LOW)  # Detener el movimiento
+
+# Then we make a simple driving pattern and loop
+try:
+    while True:
+
+        # go forward
+        go_forward(leg)
+
+        # turn right?
+        turn_right(turn)
+
+        # go forward
+        go_forward(leg)
+
+        # turn right?
+        turn_right(turn)
+
+        # go forward
+        go_forward(leg)
+
+        # turn left
+        turn_left(turn)
+
+        # go forward
+        go_forward(leg)
+
+        # turn left
+        turn_left(turn)
+
+        # reverse
+        reverse(leg)
+
+except KeyboardInterrupt:
+    pwm_a.stop()
+    pwm_b.stop()
+    GPIO.cleanup()
