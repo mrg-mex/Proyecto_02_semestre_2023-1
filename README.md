@@ -127,6 +127,38 @@ Para poder realizar la programación, se hizo uso de:
   
 Se inició con la activación de los motorreductores mediante la implementación del siguiente circuito:
 
+# Avavces del semnestre 2023-2
+
+Objetivo
+Implementar un robot móvil (2,0) el cual podrá ser utilizado para la programación de algoritmos de navegación mediante el uso de sensores ultrasónicos y análisis de imágenes. 
+Metas
+•	Evaluar y rediseñar el diseño del robot móvil con el fin de incorporar un par de sensores ultrasónicos y el driver de control de los motores.
+•	Desarrollar de una simulación del robot móvil en el simulador Gazebo mediante su implementación en ROS2.
+•	Implementar los resultados de la simulación en un ambiente definido para los robots.
+Productos
+ 	Circuito físico del sensor HY-SRF05
+ 	Circuito físico de dos motorreductores controlados con un driver
+ 	Cámara Raspberry Pi NoIR Camera V2 funcionando adecuadamente
+
+## Introducción 
+El desarrollo de los robots móviles ocurre debido a la necesidad de realizar cierto tipo de movimientos en ambientes determinados, de los cuales se desea obtener información mediante sensores que ayuden a medir las variables de interés (distancia, velocidad, humedad, etc.).
+Ante la emergencia sanitaria que se vivió en el año 2020 (COVID 19), la robótica móvil comenzó a desarrollarse aún más, esto, debido a que era necesario reducir el contacto humano. Un gran ejemplo de esto ocurrió en la clínica Victoria de Medellín ubicada en Colombia, en donde se implementó un robot móvil para esterilizar espacios que habían sido contaminados de manera rápida y efectiva sin la necesidad de que hubiera contacto físico. En la India también se pudo observar que había robots móviles encargados de suministrar alimento y medicamentos a pacientes con COVID 19, esto ayudaba a minimizar el contagio, pues era como si los pacientes fuesen prácticamente independientes de otros seres humanos.
+Lo anterior significa que existe un gran campo de aplicación de los robots móviles, e incluso hay necesidades que aún no están cubiertas porque no hay situación que lo amerite, pero la tecnología debe estar preparada para enfrentar cualquier situación que surja en el mundo.
+
+## Desarrollo
+
+El robot móvil RaspBot se nos presentó con los sensores acoplados al chasis, sin embargo, estos aún no eran funcionales, por ende, se comenzó a explorar el robot y ver que sensores debían tener funcionamiento, estos fueron:
+- Sensor ultrasónico HY-SRF05 (3)
+- Motorreductor recto acoplado a una llanta (2)
+- Cámara Raspberry Pi NoIR
+Para poder realizar la programación, se hizo uso de:
+- Raspberry pi 4
+- Motor Driver TB6612FNG
+- Herramienta computacional Thonny 
+
+Se inició con la activación de los motorreductores mediante la implementación del siguiente circuito:
+
+
 
 # Conclusión
 
